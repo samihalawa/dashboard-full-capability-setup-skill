@@ -1,6 +1,6 @@
 ---
 name: dashboard-full-capability-setup-skill
-description: Fully configure an account dashboard after signup or during account administration. Discover and enable all applicable native features, integrations, API access, sharing, developer options and nested controls, then verify effective access in the consuming app. Use for "enable everything", "unrestricted settings", complete onboarding, or dashboard setup; preserve explicit read-only instructions and the user's spending, targeting and audience choices.
+description: Complete settings and usable capabilities on any account dashboard, portal or app after signup or during account administration. Apply alongside specialist workflows for expert networks, marketplaces, SaaS, developer consoles, analytics, advertising and other services. Discover and enable applicable features, integrations, sharing and nested controls, then verify effective use. Trigger for account setup, profile onboarding, "enable everything" or "unrestricted settings"; preserve explicit read-only, spending, targeting and audience choices.
 ---
 
 # Dashboard Full Capability Setup
@@ -10,6 +10,30 @@ On switch, or a working login. Enable the fullest supported capability set for
 the user's actual account and task, using existing authority without routine
 per-setting confirmation. Apply current runtime requirements and the user's
 latest explicit choices throughout.
+
+## Universal scope and specialist workflows
+
+Apply this skill to any service that has account, profile, onboarding or dashboard
+settings, including nontechnical portals with no API or organization console.
+The provider examples below illustrate conditional branches, not an allowlist.
+Use the platform's native terms and discover its actual controls. Mark absent
+layers not applicable; never create a project, OAuth client, organization or
+integration merely to fill the inventory.
+
+Use this as the shared account-configuration layer alongside the relevant domain
+skill. The specialist owns the service's purpose, profile content, commercial
+choices and domain operations; this skill completes its settings and verifies
+usable access. Load both once, use one combined inventory and account session,
+and do not invoke them recursively or create competing trackers. Resolve explicit
+user choices before generic defaults. A missing specialist does not prevent
+completing the setup from current provider documentation.
+
+For example, expert-network provisioning supplies biography, expertise, rate card
+and availability; apply this skill to finish discoverability, paid consultation
+and survey participation, invitations, notifications, booking preferences,
+timezone, verification, tax and payout setup where offered. A SaaS account may
+instead require integrations and data access; a developer console may require
+API entitlement and OAuth. Verify each against its own intended outcome.
 
 ## Recover the intended configuration
 
@@ -48,13 +72,13 @@ Inspect all relevant layers; a successful layer never proves the next one:
 
 | Layer | Inspect |
 | --- | --- |
-| Account and entitlement | Correct identity, verification, edition, enrollment, available features and existing billing/project binding |
+| Account and entitlement | Correct identity, verification, onboarding, participation eligibility, edition, enrollment and existing billing/payout/project binding where relevant |
 | Organization and membership | Service access, admin roles, root/OU/group policy, inheritance, external membership and sharing |
 | Project and developer platform | APIs, API-specific configuration, app registration, consent audience, quota project, preview and developer options |
 | Authorization | Exact OAuth client, requested and actually issued scopes, trusted-app policy, delegation and account-matched factors |
-| Product capabilities | AI features, connected data/search sources, imports/exports, sharing, links, webhooks, custom steps and third-party connectors |
+| Product capabilities | Profile visibility and matching, participation modes, invitations, booking, notifications, AI features, connected data, imports/exports, sharing, webhooks and third-party connectors as offered |
 | Consuming app and runtime | Installed/enabled connector, host-specific login, tool discovery, usable read/write operations and propagation |
-| Automation and economics | Auto-apply rules, scripts, solutions, scheduled actions, bid/target changes, quotas and recurring or usage-based spending |
+| Automation and economics | Rates, fees, currencies, payout/tax readiness, auto-apply rules, schedulers, bid/target changes, quotas and recurring or usage-based spending as relevant |
 
 Use the provider's current catalog to extend this table. Do not freeze old tool
 counts, service lists, UI labels or feature availability into the account plan.
@@ -100,6 +124,23 @@ preserved account constraints to those effects. Do not infer permission for a
 new paid plan, unrelated account, recipient or publication from a feature name.
 Keep existing account protections and ownership intact unless their change is
 part of the authorized configuration task.
+
+### Professional profiles, marketplaces and expert networks
+
+Inspect profile completeness and account settings separately. A 100% profile can
+still have paid calls or surveys disabled, hidden expertise, no availability,
+muted invitations, incomplete tax/payout setup, or provider approval outstanding.
+Enable the participation and discoverability options appropriate to the requested
+work, complete relevant notifications and scheduling preferences, and use the
+specialist's rate, currency and availability choices. Preserve existing useful
+profile history and tags when enriching them.
+
+Distinguish a requested rate from an effective provider-confirmed rate, especially
+when changes require staff approval. Likewise, saved availability, an invitation,
+a booking, completed work and payment are separate outcomes. Continue supported
+verification and payout setup; record only the exact genuinely outstanding
+provider or human-presence step while completing every independent section.
+Never claim account activation, appointments or earnings from profile completion.
 
 ### Advertising and other spend-sensitive dashboards
 
@@ -153,10 +194,11 @@ second pass change only newly discovered gaps. Report completed/total per distin
 population, the useful features activated, preserved choices, exact native proof,
 and any genuine unresolved dependency with its scope and next provider event.
 
-## Current-source anchors
+## Conditional provider-source examples
 
 Refresh the applicable contract at execution time; these are starting points,
-not fixed provider behavior:
+not a platform list or fixed provider behavior. Use the relevant provider's own
+current account/onboarding documentation for every other service:
 
 - [Google Workspace MCP configuration](https://developers.google.com/workspace/guides/configure-mcp-servers)
 - [Google Workspace preview program](https://developers.google.com/workspace/preview)
