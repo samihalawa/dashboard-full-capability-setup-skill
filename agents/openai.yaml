@@ -1,0 +1,6 @@
+interface:
+  display_name: "Dashboard Full Capability Setup"
+  short_description: "Fully enable and verify account dashboard capabilities"
+  default_prompt: "Use $dashboard-full-capability-setup-skill to complete this account's dashboard and post-signup settings, enable every applicable capability, preserve my explicit choices, and verify real use."
+policy:
+  allow_implicit_invocation: true
